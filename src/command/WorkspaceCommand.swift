@@ -4,7 +4,6 @@ struct WorkspaceCommand : Command {
     func _run(_ subject: inout CommandSubject, _ index: Int, _ commands: [any Command]) {
         check(Thread.current.isMainThread)
         let workspace = Workspace.get(byName: workspaceName)
-        print(workspace)
         // todo drop anyLeafWindowRecursive. It must not be necessary
         if let window = workspace.mostRecentWindow ?? workspace.anyLeafWindowRecursive { // switch to not empty workspace
             subject = .window(window)

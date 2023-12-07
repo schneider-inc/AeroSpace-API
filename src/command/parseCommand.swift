@@ -10,6 +10,8 @@ func parseQueryCommand(_ raw: String) -> Parsed<QueryCommand> {
         return .success(VersionCommand())
     } else if raw == "list-apps" {
         return .success(ListAppsCommand())
+    } else if raw == "get-workspaces" {
+        return .success(GetWorkspacesCommand())
     } else if raw == "" {
         return .failure("Can't parse empty string query command")
     } else {
