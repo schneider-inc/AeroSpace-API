@@ -5,6 +5,6 @@ struct GetWorkspacesCommand: QueryCommand {
             .map { workspace in
                 return workspace.name
             }
-            .joined(" ")
+            .joined(separator: ",")
     }
 }

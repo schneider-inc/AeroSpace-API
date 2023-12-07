@@ -1,2 +1,2 @@
-public let gitHash = "f17ebd7b56d452a206a15d942c2e324cc410d2cc"
-public let gitShortHash = "f17ebd7"
+public let gitHash = "0694b92d49d50eda17e786a9dbd3a890485d0396"
+public let gitShortHash = "0694b92"

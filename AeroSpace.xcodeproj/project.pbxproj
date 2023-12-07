@@ -79,6 +79,7 @@
 		B1F37468B56941F6B22EEEDB /* layoutRecursive.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC5AF4019D1F5DAB5AF2B56 /* layoutRecursive.swift */; };
 		B3702BB393A9B03CCAE4C60E /* refresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526B113159987FA43EA41120 /* refresh.swift */; };
 		BA3AD253826B5EA318A6E687 /* MonitorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAEA4B9015FBF8711E532D0 /* MonitorEx.swift */; };
+		BA5DBBA04B2580C247817D9F /* GetActiveWorkspaceCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE687653A905B3CF3130FE6 /* GetActiveWorkspaceCommand.swift */; };
 		BB3C35BE40958AE6E7B4A9FD /* TreeNodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1645D9939F3F896EF21393 /* TreeNodeTest.swift */; };
 		BC6511DA2ABE84164D90C181 /* ExecAndForgetCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569422C0C4C23EF3E024C8E6 /* ExecAndForgetCommand.swift */; };
 		BD6301B2CFC16FDE4223ACB8 /* MacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DB782C527ABE0CF31740EB /* MacApp.swift */; };
@@ -133,6 +134,7 @@
 		244190F3707EF2BB3CC7FA5A /* MonitorDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorDescription.swift; sourceTree = "<group>"; };
 		25AC44D0E9450867215FCBEC /* MoveNodeToWorkspaceCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveNodeToWorkspaceCommand.swift; sourceTree = "<group>"; };
 		2D96FF3675C63A83DC8B8969 /* SplitCommandTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitCommandTest.swift; sourceTree = "<group>"; };
+		2DE687653A905B3CF3130FE6 /* GetActiveWorkspaceCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetActiveWorkspaceCommand.swift; sourceTree = "<group>"; };
 		3A262B442A94C1964509B691 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		3A6EF465EF4129BCB10FE247 /* ExecCommandTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecCommandTest.swift; sourceTree = "<group>"; };
 		3C2E5977331398421A4FC168 /* GlobalObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalObserver.swift; sourceTree = "<group>"; };
@@ -384,6 +386,7 @@
 		88F5F202E4D39BE05D077944 /* cli */ = {
 			isa = PBXGroup;
 			children = (
+				2DE687653A905B3CF3130FE6 /* GetActiveWorkspaceCommand.swift */,
 				A5B3DEE7BA2A5F242AE5CBF6 /* GetWorkspacesCommand.swift */,
 				4A74FD8E971E46F2049E2AA6 /* ListAppsCommand.swift */,
 				F187A6469837B279A528F0AF /* VersionCommand.swift */,
@@ -633,6 +636,7 @@
 				0A90EEEAC020DD3A56736014 /* FocusCommand.swift in Sources */,
 				A07FCBE4D69DBA4D6990E143 /* FocusSourceOfTruth.swift in Sources */,
 				2821C1C7AAEF4C290633EA72 /* FullscreenCommand.swift in Sources */,
+				BA5DBBA04B2580C247817D9F /* GetActiveWorkspaceCommand.swift in Sources */,
 				9CCC305DBD59B900DEB2D7F2 /* GetWorkspacesCommand.swift in Sources */,
 				B0D0C37BAE7E7F0D0FF1E9FC /* GlobalObserver.swift in Sources */,
 				5BC4AA58A69956C8B6379E47 /* JoinWithCommand.swift in Sources */,
