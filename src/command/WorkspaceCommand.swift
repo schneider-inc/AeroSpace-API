@@ -13,5 +13,10 @@ struct WorkspaceCommand : Command {
         }
         check(workspace.monitor.setActiveWorkspace(workspace))
         focusedWorkspaceName = workspace.name
+        DistributedNotificationCenter.default.post(name: .onChangedWorkspace, object: nil)
     }
+}
+
+extension NSNotification.Name {
+    static let onChangedWorkspace = Notification.Name("on-changed-workspace")
 }
