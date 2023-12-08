@@ -1,7 +1,7 @@
-struct GetActiveWorkspaceCommand: QueryCommand {
+struct GetWorkspaceMonitorsCommand: QueryCommand {
     func run() -> String {
         check(Thread.current.isMainThread)
-        return sortedMonitors
+        return monitors.description.joined(" ")
     }
 }
 
