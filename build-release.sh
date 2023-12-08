@@ -20,7 +20,6 @@ public let gitShortHash = "$(git rev-parse --short HEAD)"
 EOF
 }
 
-./generate.sh
 checkCleanGitWorkingDir
 generateGitHash
 xcodebuild -scheme AeroSpace build -configuration Release
