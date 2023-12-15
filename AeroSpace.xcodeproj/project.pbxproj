@@ -33,6 +33,7 @@
 		45AA5FD4A023AF751922BC22 /* BundleEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A2DF0D1F72B80B1F04240 /* BundleEx.swift */; };
 		45EA2D1C90430C432E123B51 /* keysMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0D40CBD65704BA9595C2FA /* keysMap.swift */; };
 		4D62EC19C6A1E3BBF54306BA /* Copyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B4C778D2594EB23C295741 /* Copyable.swift */; };
+		533667392B22B63C00BB5527 /* GetWorkspaceMonitorsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533667382B22B63C00BB5527 /* GetWorkspaceMonitorsCommand.swift */; };
 		56E72B24303F5F337B31B776 /* TrayMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5F52E346D024960EAF5938 /* TrayMenuModel.swift */; };
 		5BA537EABFE48178D6BD2544 /* parseGaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDFB9D7321F08B5CCEF6AFB /* parseGaps.swift */; };
 		5BC4AA58A69956C8B6379E47 /* JoinWithCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27A7AF7E9A049700BDE276B /* JoinWithCommand.swift */; };
@@ -139,7 +140,7 @@
 		3A6EF465EF4129BCB10FE247 /* ExecCommandTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecCommandTest.swift; sourceTree = "<group>"; };
 		3C2E5977331398421A4FC168 /* GlobalObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalObserver.swift; sourceTree = "<group>"; };
 		43DD32B1711B8EFCC834B68E /* WorkspaceCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceCommand.swift; sourceTree = "<group>"; };
-		458AD0CD907B56A99DA821C4 /* AeroSpace-cli */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = text; name = "AeroSpace-cli"; path = "aerospace-debug"; sourceTree = BUILT_PRODUCTS_DIR; };
+		458AD0CD907B56A99DA821C4 /* aerospace-debug */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "aerospace-debug"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B99DD05BF656B8351E12CE /* gitHashGenerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gitHashGenerated.swift; sourceTree = "<group>"; };
 		4A74FD8E971E46F2049E2AA6 /* ListAppsCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAppsCommand.swift; sourceTree = "<group>"; };
 		4B0CD3C2A0E86CDB9DF312AB /* ModeCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeCommand.swift; sourceTree = "<group>"; };
@@ -148,6 +149,7 @@
 		526B113159987FA43EA41120 /* refresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = refresh.swift; sourceTree = "<group>"; };
 		5274C575044C2A7123C57584 /* AeroSpace-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AeroSpace-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		532EA400D1CFBC5C71663FDF /* EnableCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableCommand.swift; sourceTree = "<group>"; };
+		533667382B22B63C00BB5527 /* GetWorkspaceMonitorsCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWorkspaceMonitorsCommand.swift; sourceTree = "<group>"; };
 		53FDECECC773EBA30661EB8A /* FlattenWorkspaceTreeCommandTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlattenWorkspaceTreeCommandTest.swift; sourceTree = "<group>"; };
 		54679FCD1EC1196B27E964D5 /* ConfigTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigTest.swift; sourceTree = "<group>"; };
 		54B4C778D2594EB23C295741 /* Copyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copyable.swift; sourceTree = "<group>"; };
@@ -344,7 +346,7 @@
 		62BEA6F49E6648E2EE3C208F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				458AD0CD907B56A99DA821C4 /* AeroSpace-cli */,
+				458AD0CD907B56A99DA821C4 /* aerospace-debug */,
 				5274C575044C2A7123C57584 /* AeroSpace-Tests.xctest */,
 				09685297933511208058F7CF /* AeroSpace-Debug.app */,
 			);
@@ -387,6 +389,7 @@
 			isa = PBXGroup;
 			children = (
 				2DE687653A905B3CF3130FE6 /* GetActiveWorkspaceCommand.swift */,
+				533667382B22B63C00BB5527 /* GetWorkspaceMonitorsCommand.swift */,
 				A5B3DEE7BA2A5F242AE5CBF6 /* GetWorkspacesCommand.swift */,
 				4A74FD8E971E46F2049E2AA6 /* ListAppsCommand.swift */,
 				F187A6469837B279A528F0AF /* VersionCommand.swift */,
@@ -523,7 +526,7 @@
 				82F718CE1C9CF9EB5A80DDE7 /* Socket */,
 			);
 			productName = "AeroSpace-cli";
-			productReference = 458AD0CD907B56A99DA821C4 /* AeroSpace-cli */;
+			productReference = 458AD0CD907B56A99DA821C4 /* aerospace-debug */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -533,7 +536,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					B00BE37A79171B0EE995EB83 = {
 						ProvisioningStyle = Automatic;
@@ -674,6 +677,7 @@
 				2C73CDB1A933FCA5616CDFB3 /* WorkspaceEx.swift in Sources */,
 				42197B9C71A0CDDE65804A6A /* accessibility.swift in Sources */,
 				9A138A729245BD2723148583 /* focused.swift in Sources */,
+				533667392B22B63C00BB5527 /* GetWorkspaceMonitorsCommand.swift in Sources */,
 				B10FEEE51CF00B24BE9E2306 /* gitHashGenerated.swift in Sources */,
 				45EA2D1C90430C432E123B51 /* keysMap.swift in Sources */,
 				B1F37468B56941F6B22EEEDB /* layoutRecursive.swift in Sources */,
@@ -738,9 +742,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -771,6 +777,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -789,7 +796,9 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4MWP47XA68;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = DU5UF92YPV;
+				ENABLE_HARDENED_RUNTIME = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -810,6 +819,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 0.6.0;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSUIElement = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -860,9 +870,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -886,6 +898,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -903,6 +916,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -925,7 +939,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 0.6.0;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = DU5UF92YPV;
+				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSUIElement = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
