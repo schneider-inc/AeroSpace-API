@@ -39,6 +39,25 @@ let keysMap: [String: Key] = [
     "8": .eight,
     "9": .nine,
 
+    "keypad0": .keypad0,
+    "keypad1": .keypad1,
+    "keypad2": .keypad2,
+    "keypad3": .keypad3,
+    "keypad4": .keypad4,
+    "keypad5": .keypad5,
+    "keypad6": .keypad6,
+    "keypad7": .keypad7,
+    "keypad8": .keypad8,
+    "keypad9": .keypad9,
+    "keypadClear": .keypadClear,
+    "keypadDecimalMark": .keypadDecimal,
+    "keypadDivide": .keypadDivide,
+    "keypadEnter": .keypadEnter,
+    "keypadEqual": .keypadEquals,
+    "keypadMinus": .keypadMinus,
+    "keypadMultiply": .keypadMultiply,
+    "keypadPlus": .keypadPlus,
+
     "f1": .f1,
     "f2": .f2,
     "f3": .f3,
@@ -89,3 +108,19 @@ let modifiersMap: [String: NSEvent.ModifierFlags] = [
     "ctrl": .control,
     "cmd": .command,
 ]
+
+// doesn't work :(
+//extension NSEvent.ModifierFlags {
+//    static let lOption = NSEvent.ModifierFlags(rawValue: 1 << 1)
+//    static let rOption = NSEvent.ModifierFlags(rawValue: 1 << 2)
+//    static let lShift = NSEvent.ModifierFlags(rawValue: 0x00000002)
+//    static let rShift = NSEvent.ModifierFlags(rawValue: 0x00000004)
+//    static let lCommand = NSEvent.ModifierFlags(rawValue: 1 << 7)
+//    static let rCommand = NSEvent.ModifierFlags(rawValue: 0x00000010)
+//}
+
+// NSEvent.ModifierFlags.command.rawValue // 1 << 20
+// NSEvent.ModifierFlags.option.rawValue // 1 << 19
+// NSEvent.ModifierFlags.control.rawValue // 1 << 18
+// NSEvent.ModifierFlags.shift.rawValue // 1 << 17
+// https://github.com/koekeishiya/skhd/blob/master/src/hotkey.h

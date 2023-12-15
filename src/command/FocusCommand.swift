@@ -1,5 +1,5 @@
 struct FocusCommand: Command {
-    let direction: CardinalDirection
+    let args: FocusCmdArgs
 
     func _run(_ subject: inout CommandSubject, _ index: Int, _ commands: [any Command]) {
         check(Thread.current.isMainThread)
@@ -10,6 +10,7 @@ struct FocusCommand: Command {
         defer {
             restoreFloatingWindows(floatingWindows: floatingWindows, workspace: workspace)
         }
+        let direction = args.direction
 
         guard let (parent, ownIndex) = currentWindow.closestParent(hasChildrenInDirection: direction, withLayout: nil) else { return }
         let windowToFocus = parent.children[ownIndex + direction.focusOffset]
@@ -30,7 +31,7 @@ private func makeFloatingWindowsSeenAsTiling(workspace: Workspace) -> [FloatingW
     let floatingWindows: [FloatingWindowData] = workspace.floatingWindows
         .map { (window: Window) -> FloatingWindowData? in
             guard let center = window.getCenter() else { return nil }
-            // todo bug: what if there are now tiling windows on the workspace?
+            // todo bug: what if there are no tiling windows on the workspace?
             guard let target = center.coerceIn(rect: window.workspace.monitor.visibleRectPaddedByOuterGaps).findIn(tree: workspace.rootTilingContainer, virtual: true) else { return nil }
             guard let targetCenter = target.getCenter() else { return nil }
             guard let tilingParent = target.parent as? TilingContainer else { return nil }
